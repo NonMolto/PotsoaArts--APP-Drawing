@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de Desenho Simples</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Simple drawing</h1>
+    <div class="bg-canvas">
+        <canvas id="drawingCanvas" width="600" height="600"></canvas>
+        <button class="btn-download" onclick="baixar_imagem()">Baixar Imagem</button>
+        <br>
+    </div>
+
+    <div class="controls">
+        <button id="cleanCanvas">Limpe a tela</button>
+    <br>
+    
+        <label for="color">Cor: </label>
+        <input type="color" id="color" value="#000000">
+
+        <label for="size">Espessura: </label>
+        <input type="range" id="size" min="5" max="100">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
